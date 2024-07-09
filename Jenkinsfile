@@ -3,7 +3,8 @@ pipeline {
     stages {
       stage('Checkout') {
         steps {
-          git 'https://github.com/Antoniosampaio12/jenkins-test.git'
+           echo 'Hello Wordl'
+         // git 'https://github.com/Antoniosampaio12/jenkins-test.git'
         }
       }
       stage('Build') {

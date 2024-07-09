@@ -1,15 +1,29 @@
 pipeline {
   agent any 
     stages {
-      stage('Checkout') {
+      stage('Hi') {
         steps {
            echo 'Hello Wordl'
-         // git 'https://github.com/Antoniosampaio12/jenkins-test.git'
         }
       }
       stage('Build') {
         steps {
-
+          echo 'Building'
+        }
+      }
+      stage('Test') {
+        steps {
+          echo 'Testing'
+        }
+      }
+      stage('Package') {
+        steps {
+          echo 'Packaging'
+        }
+      }
+      stage('Deploy') {
+        steps {
+          echo 'Deploying'
         }
       }
     }

@@ -9,8 +9,7 @@ pipeline {
       }
       stage('Build') {
         steps {
-          sh 'mkdir -p html'
-          sh 'echo "<html><body><h1>Hello,World!</h1></body></html>" > html/index.html'
+
         }
       }
     }
